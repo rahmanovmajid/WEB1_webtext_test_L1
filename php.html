@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<title>Aydaaa</title>
+		<meta charset="utf-8">
+		
+
+
+		<style>
+			body{
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			}	
+			form span{
+				font-family: Helvetica;
+				font-size: 16pt;
+
+			}
+			input[type="text"]:invalid{
+				line-height: 30px;
+				border: 2px red solid;
+			} 
+			input[type="text"	]:valid{
+				line-height: 30px;
+				border: 2px green solid;
+			}
+			
+		</style>
+
+
+
+
+
+	</head>
+
+	<body>
+			
+		<form action="bir.php" method="post">
+			
+		  <!-- Form start-->
+			<span>Name:     </span>	<input type="text" name="ad" required placeholder="Enter your Name"><br>
+			<span>Surname:  </span>	<input type="text" name="ad" required placeholder="Enter your surname"><br>
+			<span>E-mail:</span> <input type="email" name="soyad" required placeholder="example@example.com"> <br><br><br/>
+			<span>Gender: </span> <br> <br>
+			<label for="male">Male</label> <input type="radio" name="rb" id="male">
+			<label for="female">Female</label> <input type="radio" name="rb" id="female"><br> <br> <br> <br>
+
+
+			<!-- DROP DOWN LIST -->
+
+			<span> What is the most visited site all over the world in your opinion? </span> <br> <br>
+			<select name="list[]" size="5" multiple>
+				<optgroup label="Most Chosen"> 
+					<option value="1">Facebook</option>
+					<option value="2">Twitter</option>
+					<option value="3">Instagram</option>
+				</optgroup>
+				<optgroup label="Least Chosen"> 
+					<option value="4">Vkontakte</option>
+					<option value="5">Odnoklassniki</option>
+					<option value="6">Ask.fm</option>
+				</optgroup>
+				<optgroup label="Most Chosen"> 
+					<option value="7">YouTube</option>
+					<option value="8">Dailymotion</option>
+					<option value="9">IDK</option>
+				</optgroup>
+
+
+			</select>
+
+			<br> <br> <br> <br>
+			<!-- Checkbox: -->
+
+			<span> Choose the ones you'd prefer most: </span> <br>
+			<label for="o1">Photon</label><input type="checkbox" name="cb[]" id="o1">
+			<label for="o2">Luna</label><input type="checkbox" name="cb[]" id="o2">
+			<label for="o3">Oxygen</label><input type="checkbox" name="cb[]" id="o3">
+			<label for="o4">Mars</label><input type="checkbox" name="cb[]" id="o4">
+			<label for="o5">Moon</label><input type="checkbox" name="cb[]" id="o5">
+			<br> <button onclick="CB(1)"> All </button> <br> <button onclick="CB(-2)"> None </button>
+			<br><br>
+			<textarea name="commentarea"  placeholder="Explain why you want to use this social network."></textarea>
+
+
+			<hr>
+			<button type="submit"> SEND </button>
+
+
+		</form>
+
+		<script type="text/javascript">
+		function CB(status){
+			theCB = document.querySelectorAll('input[type="checkbox"]');
+			for (i=0;i<theCB.length;i++){
+				if ( status == 1 ){
+					theCB[i].checked=true;
+				}else{
+					theCB[i].checked=false;
+				}
+			}
+
+		}
+
+		
+		</script>
+
+	</body>
+</html>

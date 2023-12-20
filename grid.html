@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        <title>My Grid Site</title>
+
+        <style>
+            *{
+                
+            }
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 18pt;
+                text-align: justify;
+            }
+            main{
+                display:grid;
+                width: 1000px;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:  "a1 a1 a1 s1"
+                                    "a2 s2 s2  a3  "
+                                    "a2 s2 s2  a3"
+                                    "a2 a5 a5 a3"
+            }
+            #a1{
+                border: 2px seagreen solid;
+                grid-area: a1;
+            }
+            #a2{
+                border: 2px seagreen solid;
+
+                grid-area: a2;
+            }
+            #a3{
+                border: 2px seagreen solid;
+
+                grid-area: a3;
+            }
+            #a4{
+                grid-area: a4;
+                border: 2px seagreen solid;
+
+            }
+            #a5{
+                grid-area: a5;
+                border: 2px seagreen solid;
+
+            }
+            #s1{
+                grid-area: s1;
+                border: 2px seagreen solid;
+
+
+            }
+            #s2{
+                grid-area: s2;
+                border: 2px seagreen solid;
+
+            }
+            #s3{
+                grid-area: s3;
+                border: 2px seagreen solid;
+
+            }
+
+        
+        
+        </style>
+    </head>
+
+    <body>
+
+        <h1> Welcome to LIPSUM world! </h1>
+
+        <main>
+            <article id="a1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis sed massa fringilla, blandit nisl iaculis, varius lorem. 
+                    Aenean eget blandit orci. Cras pulvinar commodo ullamcorper. 
+                    Integer vulputate imperdiet tellus vel faucibus. Donec quis dictum elit
+                    , at malesuada mi. Pellentesque fringilla velit vitae tortor sollicitud
+                    in condimentum. Aenean vitae imperdiet arcu, quis dapibus elit.
+            </article>
+
+            <img id="s1" src="x.jpeg">
+
+            <article id="a2">
+                Maecenas vitae pharetra nunc, ac scelerisque tellus. Morbi vestibulum sem id mi accumsan, vitae laoreet velit suscipit. Aliquam mattis laoreet elit, mattis pretium magna pretium at. Quisque elementum ultrices mattis. Ut suscipit rhoncus diam, et hendrerit ante varius id. Maecenas malesuada ut arcu ac eleifend. Nullam eget semper dolor. Nullam semper facilisis magna eget vulputate. In commodo, leo in varius egestas, dui urna porta turpis, vitae placerat magna dui non est. Nunc non lectus ex. Ut vel scelerisque sem. Aenean malesuada non sapien et efficitur. Sed metus orci, aliquet a mi a, tincidunt tempor nisi. Fusce dignissim vitae odio et posuere. Integer auctor aliquet dolor. Duis faucibus tortor ex, in consequat lorem commodo at.
+            </article>
+
+            <img id="s2" src="sabri.jpeg" style="width: 40%">
+
+            <article id="a3">
+                    Fusce mollis augue leo, nec tincidunt dolor tincidunt quis. Morbi nec convallis diam, et iaculis velit. Nulla risus ante, luctus nec ipsum ac, euismod interdum est. Vestibulum quis efficitur lorem. Maecenas eleifend egestas massa vitae fermentum. Donec volutpat congue elementum. Mauris elementum erat ante, id facilisis est auctor non. In gravida sollicitudin neque. Fusce porta enim id hendrerit semper. Nulla ut turpis quis lectus vehicula condimentum. Sed ex quam, cursus eu euismod eu, mollis convallis magna. Sed id ante eu libero fermentum finibus.
+
+            </article>
+
+
+            <article id="a4">
+                    In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam vitae auctor dui. Mauris bibendum elit lectus, eget pharetra arcu pulvinar ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ut fermentum odio. Nam tempus lectus ultricies dolor viverra, luctus vestibulum augue elementum.
+                    Pellentesque congue, nulla ut accumsan porta, libero nisl pharetra enim, vitae luctus arcu nunc nec nulla. Donec ex ante, venenatis ut faucibus ut, aliquam vel elit. Nunc consequat convallis orci, non sollicitudin leo iaculis ut. Etiam ut massa eget lorem congue rutrum. Praesent fringilla, elit quis aliquet tincidunt, libero ligula cursus lacus, ut dictum risus mauris quis sapien. Mauris ullamcorper luctus enim, a pharetra lectus molestie sed. Ut nisi massa, aliquam quis faucibus sit amet, rutrum non lacus. Vestibulum luctus egestas mi ut facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget neque at est sodales interdum ut at elit. Nunc et imperdiet nisi. Morbi non tempus ex, ut consequat elit. Curabitur vitae molestie justo, quis semper purus.
+
+
+            </article>
+
+        
+
+        </main>
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

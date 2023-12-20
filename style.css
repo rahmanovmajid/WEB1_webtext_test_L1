@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 14pt;
+    font-family: Helvetica;
+    text-align: justify;
+    width: 1250px;
+}
+#aqua{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(19, 212, 138);
+    padding: 5px;
+} 
+header{
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid rgb(25, 64, 238);
+    background-color: rgb(25, 64, 238);
+}
+nav{
+    margin: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: cyan;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+#home{
+    padding: 20px;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15pt;
+}
+#about{  
+    padding: 20px;
+    margin-right: 3cm;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15pt;
+}
+#faq{
+    padding: 20px;
+    margin-right: 3cm;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15pt;
+}
+#contact{
+    padding: 20px;
+    margin-right: 3cm;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#info{
+    padding: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15pt;
+}
+main{
+    width: 1000px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "article aside"
+                         "article article"
+}
+
+#sec1{
+    text-align: justify;
+    border: 4px solid black;
+    width: 650px;
+}
+#sec2{
+    border: 4px solid black;
+    text-align: justify;
+    width: 650px;
+}
+#article{
+    border: 4px solid black;
+    text-align: justify;
+    width: 700px;
+    grid-area: article;
+}
+#aside{
+    border: 4px solid black;
+    text-align: justify;
+    width: 400px;
+    grid-area: aside;
+}
+
